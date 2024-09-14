@@ -80,6 +80,11 @@ public class IndexController {
         return homePageDesign.getFileName();
     }
 
+    @GetMapping(value = "lebanon")
+    public String meatKing() {
+        return "lebanon";
+    }
+
     @GetMapping(value = "banned")
     public String bannedController() {
         return "banned";
